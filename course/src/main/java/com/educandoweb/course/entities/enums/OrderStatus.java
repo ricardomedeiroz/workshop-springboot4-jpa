@@ -3,10 +3,10 @@ package com.educandoweb.course.entities.enums;
 public enum OrderStatus {
 
     WAITING_PAYMENT(1),
-    CANCELED(2),
-    DELIVERED(3),
-    SHIPPED(4),
-    PAID(5);
+    PAID(2),
+    SHIPPED(3),
+    DELIVERED(4),
+    CANCELED(5);
 
     private int code;
 
