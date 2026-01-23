@@ -1,6 +1,6 @@
 package com.educandoweb.course.config;
 
-import com.educandoweb.course.Payment;
+import com.educandoweb.course.entities.Payment;
 import com.educandoweb.course.entities.*;
 import com.educandoweb.course.entities.enums.OrderStatus;
 import com.educandoweb.course.repositories.*;

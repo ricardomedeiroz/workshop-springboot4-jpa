@@ -1,8 +1,6 @@
 package com.educandoweb.course.entities;
-import com.educandoweb.course.Payment;
 import com.educandoweb.course.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -37,6 +35,7 @@ public class Order implements Serializable {
     @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
     private Payment payment;
 
+    private OrderItem orderItem;
 
     public Order(){
 
@@ -101,6 +100,15 @@ public class Order implements Serializable {
     public void setPayment(Payment payment) {
         this.payment = payment;
     }
+
+    public Double getTotal() {
+        Double sum = 0.0;
+        for (OrderItem x : items) {
+            sum += x.getSubTotal();
+
+        }return sum;
+    }
+
 
     @Override
     public boolean equals(Object o) {
