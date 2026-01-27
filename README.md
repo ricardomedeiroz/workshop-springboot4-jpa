@@ -1,4 +1,4 @@
-# Big Game Survey 
+# Spring Boot / JPA
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/ricardomedeiroz/workshop-springboot4-jpa/blob/main/LICENSE) 
 
 # Sobre o projeto
